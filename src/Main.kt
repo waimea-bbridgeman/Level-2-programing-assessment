@@ -14,25 +14,13 @@
  */
 
     const val gameLength = 15
-
-fun setUpGame() {
-    println("Game rules: Old gold is a game for two players that's played on a one-dimensional grid with coins, " +
-            "where the aim is to win by being the player who removes the gold coin.")
-
-    val playerOne = println("Enter player ones username")
-    val playerTwo = println("Enter player twos username")
-
-
-}
-
-
-
-
-
+    const val EMPTY = "---"
 fun main() {
     println("Welcome to the Old Gold Coin game!")
     println("-----------------------------------")
+    println()
 
+    setUpGame()
 
     displayGame()
 
@@ -41,6 +29,27 @@ fun main() {
 
 }
 
+fun setUpGame() {
+    val gameBoard = mutableListOf<String>()
+    gameBoard.add(EMPTY)
+
+    println("Game rules: Old gold is a game for two players that's played on a one-dimensional grid with coins, " +
+            "where the aim is to win by being the player who removes the gold coin.")
+    println()
+
+//    Get player names
+    val playerOne = getString("Enter player ones username: ")
+    val playerTwo = getString("Enter player twos username: ")
+
+//    confirm player names
+    println("Player One: $playerOne")
+    println("Player Two: $playerTwo")
+
+
+}
+
+
+
 fun displayGame() {
 
     val banner = ("+--------".repeat(gameLength) + "+")
@@ -48,15 +57,8 @@ fun displayGame() {
 
     println(banner)
 
-    for (i in 0..<gameSize.size) {
-        print("| Cage ${i + 1} " .padEnd(9))
-    }
-    println("|")
-
-    println(banner)
-
-    for (i in 0..<cageList.size) {
-        print("| ${cageList[i]}" .padEnd(9))
+    for (i in 0..<gameLength) {
+        print("| ${i + 1} " .padEnd(9))
     }
 
     println("|")
@@ -65,3 +67,15 @@ fun displayGame() {
 
 }
 
+fun getString(prompt: String): String {
+    var userInput: String
+    while (true) {
+        print(prompt)
+
+        userInput = readln()
+        if (userInput.isNotBlank())
+            break
+
+    }
+    return userInput
+}
