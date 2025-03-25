@@ -14,11 +14,24 @@
  */
 
     const val gameLength = 15
-    const val EMPTY = "---"
+    const val EMPTY = ""
+    const val REMOVE = 'X'
+
 fun main() {
+    println()
     println("Welcome to the Old Gold Coin game!")
     println("-----------------------------------")
     println()
+
+    val coins = mutableListOf<String>()
+    coins.add("Slvr coin")
+    coins.add("Slvr coin")
+    coins.add("Slvr coin")
+    coins.add("gldCoin")
+    coins.add("Slvr coin")
+
+
+
 
     setUpGame()
 
@@ -26,6 +39,27 @@ fun main() {
 
 
 
+//  while (true) {
+//      val action = getUserAction()
+//
+//      if (action == REMOVE) {
+//          coins.removeAt(1)
+//      }
+//      //Ask player one for move
+//      val playerOneMove = (userInput)
+//
+//
+//
+//
+//     //ask player two for move
+//      val playerTwoMove = (userInput2)
+//      if (gldCoin == null) break
+//
+//
+//
+//
+//
+//  }
 
 }
 
@@ -34,7 +68,8 @@ fun setUpGame() {
     gameBoard.add(EMPTY)
 
     println("Game rules: Old gold is a game for two players that's played on a one-dimensional grid with coins, " +
-            "where the aim is to win by being the player who removes the gold coin.")
+            "where the aim is to win by being the player who removes the gold coin. Note: 'Slvr coin' is a silver coin" +
+            " and 'Gld coin' is the gold coin.")
     println()
 
 //    Get player names
@@ -56,6 +91,11 @@ fun displayGame() {
 
 
     println(banner)
+
+//    for (i in 0..<gameLength) {
+//        print("${i} ".padEnd(9))
+//    }
+
 
     for (i in 0..<gameLength) {
         print("| ${i + 1} " .padEnd(9))
@@ -79,3 +119,16 @@ fun getString(prompt: String): String {
     }
     return userInput
 }
+
+fun getUserAction(): Char {
+    return REMOVE
+}
+
+//fun userInput(): String {
+//
+//    when (playerOneMove) {
+//        l -> move coin to left
+//        r -> move coin to right
+//
+//    }
+//}
