@@ -13,9 +13,9 @@
  * =====================================================================
  */
 
-    const val gameLength = 15
-    const val EMPTY = ""
-    const val REMOVE = 'X'
+    const val gameLength = 15 //the length of the game board
+    const val EMPTY = "" //Is an empty slot on the board
+    const val REMOVE = 'X' //Will remove a coin from the 1 slot on the board
 
 fun main() {
     println()
@@ -24,13 +24,26 @@ fun main() {
     println()
 
     val coins = mutableListOf<String>()
-    coins.add("Slvr coin")
-    coins.add("Slvr coin")
-    coins.add("Slvr coin")
+    coins.add("slvrCoin")
+    coins.add("slvrCoin")
+    coins.add("slvrCoin")
     coins.add("gldCoin")
-    coins.add("Slvr coin")
+    coins.add("slvrCoin")
+    coins.add("slvrCoin")
+    coins.add("slvrCoin")
+    coins.add("slvrCoin")
+    coins.add("")
+    coins.add("")
+    coins.add("")
+    coins.add("")
+    coins.add("")
+    coins.add("")
+    coins.add("")
+
+    coins.shuffle() //randomises the coins to keep the game from being repetitive
 
 
+    //coinsOnBoard() display coins on the board like cagelist 
 
 
     setUpGame()
@@ -127,8 +140,8 @@ fun getUserAction(): Char {
 //fun userInput(): String {
 //
 //    when (playerOneMove) {
-//        l -> move coin to left
-//        r -> move coin to right
+//        l -> left
+//        X -> REMOVE
 //
 //    }
 //}
