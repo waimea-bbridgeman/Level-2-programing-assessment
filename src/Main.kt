@@ -43,7 +43,7 @@ fun main() {
     coins.shuffle() //randomises the coins to keep the game from being repetitive
 
 
-    //coinsOnBoard() display coins on the board like cagelist 
+    //coinsOnBoard() display coins on the board from random
 
 
     setUpGame()
@@ -53,20 +53,7 @@ fun main() {
 
 
 //  while (true) {
-//      val action = getUserAction()
-//
-//      if (action == REMOVE) {
-//          coins.removeAt(1)
-//      }
-//      //Ask player one for move
-//      val playerOneMove = (userInput)
-//
-//
-//
-//
-//     //ask player two for move
-//      val playerTwoMove = (userInput2)
-//      if (gldCoin == null) break
+//      playerMove = userInput()
 //
 //
 //
@@ -105,10 +92,6 @@ fun displayGame() {
 
     println(banner)
 
-//    for (i in 0..<gameLength) {
-//        print("${i} ".padEnd(9))
-//    }
-
 
     for (i in 0..<gameLength) {
         print("| ${i + 1} " .padEnd(9))
@@ -137,11 +120,11 @@ fun getUserAction(): Char {
     return REMOVE
 }
 
-//fun userInput(): String {
+//fun userInput() {
 //
-//    when (playerOneMove) {
-//        l -> left
-//        X -> REMOVE
+//    when (playerMove) {
+//        'l' -> left
+//        'X' -> REMOVE
 //
 //    }
 //}
