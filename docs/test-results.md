@@ -6,17 +6,17 @@ The test results show the actual outcome of the testing, following the [Test Pla
 
 ## Example Test Name
 
-Example test description. Example test description.Example test description. Example test description.Example test description. Example test description.
+Do the player names get stored correctly for later use
 
 ### Test Data Used
 
-Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data.
+Run the program and see if it'll display player names
 
 ### Test Result
 
-![example.png](screenshots/example.png)
+![playerNames.gif](screenshots/playerNames.gif)
 
-Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result.
+The program ran without any errors and collected and displayed player names correctly 
 
 ---
 

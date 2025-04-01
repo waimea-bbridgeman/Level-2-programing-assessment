@@ -17,31 +17,18 @@
     const val EMPTY = "" //Is an empty slot on the board
     const val REMOVE = 'X' //Will remove a coin from the 1 slot on the board
 
-fun main() {
+fun main() { //do some testing
     println()
     println("Welcome to the Old Gold Coin game!")
     println("-----------------------------------")
     println()
 
-    val coins = mutableListOf<String>()
-    coins.add("slvrCoin")
-    coins.add("slvrCoin")
-    coins.add("slvrCoin")
-    coins.add("gldCoin")
-    coins.add("slvrCoin")
-    coins.add("slvrCoin")
-    coins.add("slvrCoin")
-    coins.add("slvrCoin")
-    coins.add("")
-    coins.add("")
-    coins.add("")
-    coins.add("")
-    coins.add("")
-    coins.add("")
-    coins.add("")
+   setupCoins()
 
-    coins.shuffle() //randomises the coins to keep the game from being repetitive
+    coins.add("slvr coin") 
 
+    setupCoins().shuffle() //randomises the coins to keep the game from being repetitive
+    println(setupCoins())
 
     //coinsOnBoard() display coins on the board from random
 
@@ -67,9 +54,9 @@ fun setUpGame() {
     val gameBoard = mutableListOf<String>()
     gameBoard.add(EMPTY)
 
-    println("Game rules: Old gold is a game for two players that's played on a one-dimensional grid with coins, " +
-            "where the aim is to win by being the player who removes the gold coin. Note: 'Slvr coin' is a silver coin" +
-            " and 'Gld coin' is the gold coin.")
+    println("Game rules: Old gold is a game for two players that's played on a one-dimensional grid with coins, \n" +
+            "where the aim is to win by being the player who removes the gold coin. Note: 'Slvr coin' is a silver coin\n" +
+            "and 'Gld coin' is the gold coin.")
     println()
 
 //    Get player names
@@ -87,15 +74,27 @@ fun setUpGame() {
 
 fun displayGame() {
 
-    val banner = ("+--------".repeat(gameLength) + "+")
+    val banner = ("+----".repeat(gameLength) + "+")
 
 
     println(banner)
 
 
     for (i in 0..<gameLength) {
-        print("| ${i + 1} " .padEnd(9))
+        print("| ${i + 1} " .padEnd(5))
     }
+    println("|")
+
+    println(banner)
+
+
+    for (i in 0..<gameLength) {
+        print("| ${setupCoins()}" .padEnd(5))
+    }
+
+//for (i in 0..<cageList.size) {
+//        print("| ${cageList[i]}" .padEnd(9))
+//    }
 
     println("|")
 
@@ -128,3 +127,9 @@ fun getUserAction(): Char {
 //
 //    }
 //}
+
+fun setupCoins(): MutableList<String> {
+    val coins = mutableListOf<String>()
+    for (i in 1..gameLength) coins.add(EMPTY)
+    return coins
+}
