@@ -22,17 +22,18 @@ The program ran without any errors and collected and displayed player names corr
 
 ## Example Test Name
 
-Example test description. Example test description.Example test description. Example test description.Example test description. Example test description.
+Display the coins on the board 
 
 ### Test Data Used
 
-Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data.
+Run the program. The program will display the list in every individual box instead of put the list into the board 
+like you would expect. 
 
 ### Test Result
+![listnotwork.gif](screenshots/listnotwork.gif)
 
-![example.png](screenshots/example.png)
 
-Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result.
+I need to fix this and will show the fix later. 
 
 ---
 

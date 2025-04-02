@@ -16,8 +16,8 @@
     const val gameLength = 15 //the length of the game board
     const val EMPTY = "" //Is an empty slot on the board
     const val REMOVE = 'X' //Will remove a coin from the 1 slot on the board
-
-fun main() { //do some testing
+    val coins = mutableListOf("Slvr-coin, Slvr-coin, Slvr-coin, Slvr-coin, Slvr-coin, Gld-coin")
+fun main() {
     println()
     println("Welcome to the Old Gold Coin game!")
     println("-----------------------------------")
@@ -25,12 +25,11 @@ fun main() { //do some testing
 
    setupCoins()
 
-    coins.add("slvr coin") 
 
-    setupCoins().shuffle() //randomises the coins to keep the game from being repetitive
-    println(setupCoins())
 
-    //coinsOnBoard() display coins on the board from random
+    coins.random() //randomises the coins to keep the game from being repetitive
+
+
 
 
     setUpGame()
@@ -89,12 +88,10 @@ fun displayGame() {
 
 
     for (i in 0..<gameLength) {
-        print("| ${setupCoins()}" .padEnd(5))
+        print("| ${coins}" .padEnd(5))
     }
 
-//for (i in 0..<cageList.size) {
-//        print("| ${cageList[i]}" .padEnd(9))
-//    }
+
 
     println("|")
 
