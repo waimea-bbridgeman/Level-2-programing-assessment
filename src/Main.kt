@@ -16,7 +16,7 @@
     const val gameLength = 15 //the length of the game board
     const val EMPTY = "" //Is an empty slot on the board
     const val REMOVE = 'X' //Will remove a coin from the 1 slot on the board
-    val coins = mutableListOf("Slvr-coin, Slvr-coin, Slvr-coin, Slvr-coin, Slvr-coin, Gld-coin")
+
 fun main() {
     println()
     println("Welcome to the Old Gold Coin game!")
@@ -25,17 +25,26 @@ fun main() {
 
    setupCoins()
 
+    val coins = mutableListOf<String>()
+    coins.add("GC")
+    coins.add("SC")
+    coins.add("SC")
+    coins.add("SC")
+    coins.add("SC")
+    coins.add("SC")
+    coins.add("SC")
 
+    var shuffCoins = coins
 
-    coins.random() //randomises the coins to keep the game from being repetitive
+    shuffCoins.shuffle() //randomises the coins to keep the game from being repetitive
 
+    println(coins)
 
 
 
     setUpGame()
 
     displayGame()
-
 
 
 //  while (true) {
@@ -71,15 +80,15 @@ fun setUpGame() {
 
 
 
-fun displayGame() {
+fun displayGame(boardLength: Int = gameLength) {
 
-    val banner = ("+----".repeat(gameLength) + "+")
+    val banner = ("+----".repeat(boardLength) + "+")
 
 
     println(banner)
 
 
-    for (i in 0..<gameLength) {
+    for (i in 0..<boardLength) {
         print("| ${i + 1} " .padEnd(5))
     }
     println("|")
@@ -87,9 +96,9 @@ fun displayGame() {
     println(banner)
 
 
-    for (i in 0..<gameLength) {
-        print("| ${coins}" .padEnd(5))
-    }
+//    for (i in 0..<boardLength) {
+//        print("| ${coins[i]}" .padEnd(5))
+//    }
 
 
 
@@ -126,7 +135,7 @@ fun getUserAction(): Char {
 //}
 
 fun setupCoins(): MutableList<String> {
-    val coins = mutableListOf<String>()
-    for (i in 1..gameLength) coins.add(EMPTY)
-    return coins
+    val boardLength = mutableListOf<String>()
+    for (i in 1..gameLength) boardLength.add(EMPTY)
+    return boardLength
 }
