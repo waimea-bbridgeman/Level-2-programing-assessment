@@ -54,7 +54,7 @@ fun main() {
    while (true) {
        println("Player ones turn")
        userInput()
-//       check(coins) check for GC 
+//       check(coins) check for GC
 
    }
 
