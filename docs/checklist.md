@@ -12,7 +12,7 @@ The game functions correctly and meets the specification:
 - [ ] The game is **playable**
 - [ ] The **instructions** for the game are available in-game
 - [ ] **Two players** can play
-- [ ] Player **names** are used to identify each player
+- [ x ] Player **names** are used to identify each player
 - [ ] Players **take turns** to play
 - [ ] Players provides **input data** to the game (e.g. moves to make)
 - [ ] The **current status** of the game is shown after each play
@@ -21,22 +21,22 @@ The game functions correctly and meets the specification:
 ### Program Code
 
 The program stores data using:
-- [ ] **Variables** of at least two types (e.g. int, text, boolean)
-- [ ] At least one **data collection** (array / list) to store some elements of the game data
+- [ x ] **Variables** of at least two types (e.g. int, text, boolean)
+- [ x ] At least one **data collection** (array / list) to store some elements of the game data
 
 The program structure:
-- [ ] Is broken up into **functions**: a main function, plus other supporting functions 
+- [ x ] Is broken up into **functions**: a main function, plus other supporting functions 
 - [ ] Contains **sequences** of instructions
 - [ ] Uses **conditional** instructions to control the program flow
-- [ ] Uses program **branches** (if...else, when, etc.)
-- [ ] Uses **iteration** (loops) to repeat things (for, while, etc.)
+- [ x ] Uses program **branches** (if...else, when, etc.)
+- [ x ] Uses **iteration** (loops) to repeat things (for, while, etc.)
 
 ### Program Documentation
 
 The program code:
-- [ ] Is **indented** correctly
-- [ ] Is **laid-out clearly**
-- [ ] Contains **comments** that help in understanding how it works
+- [ x ] Is **indented** correctly
+- [ x ] Is **laid-out clearly**
+- [ x ] Contains **comments** that help in understanding how it works
 
 ### Program Testing
 
@@ -49,7 +49,7 @@ The program has been tested and there is documented evidence that:
   - [ ] players winning
   - [ ] final feedback (if appropriate)
 - [ ] **Valid (expected) data** has been used to test **all data inputs**
-- [ ] Where tests have failed, **fixes** are discussed and **tests re-run**
+- [ x ] Where tests have failed, **fixes** are discussed and **tests re-run**
 
 ---
 
@@ -58,16 +58,16 @@ The program has been tested and there is documented evidence that:
 ### Program Code
 
 The program stores data using variables, where:
-- [ ] Variable **names are well-chosen** (relating to their purpose)
-- [ ] Variable names **begin with lowercase**
-- [ ] Naming is consistent, either **camelCase or snake_case**
+- [ x ] Variable **names are well-chosen** (relating to their purpose)
+- [ x ] Variable names **begin with lowercase**
+- [ x ] Naming is consistent, either **camelCase or snake_case**
 - [ ] Variables are **scoped appropriately** (global or local to a function)
-- [ ] **Global** variables are only used if **genuinely needed**
+- [ x ] **Global** variables are only used if **genuinely needed**
 
 The program uses functions appropriately, where:
 - [ ] At least one uses **parameters** to pass data into it
-- [ ] At least one provides a **return value** to the calling code
-- [ ] The function **names are well-chosen**, relating to their functionality 
+- [ x ] At least one provides a **return value** to the calling code
+- [ x ] The function **names are well-chosen**, relating to their functionality 
 
 ### Program Documentation
 

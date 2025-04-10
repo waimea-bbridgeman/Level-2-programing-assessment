@@ -43,6 +43,12 @@ fun main() {
     coins.add(EMPTY)
 
 
+    val playerOne = getString("Enter player ones username: ")
+    val playerTwo = getString("Enter player twos username: ")
+
+//    confirm player names
+    println("Player One: $playerOne")
+    println("Player Two: $playerTwo")
 
     coins.shuffle() //randomises the coins to keep the game from being repetitive
 
@@ -52,9 +58,17 @@ fun main() {
     displayGame(coins)
 
    while (true) {
-       println("Player ones turn")
-       userInput()
-//       check(coins) check for GC
+       println("$playerOne 's turn")
+       userInput(coins)
+       displayGame(coins)
+
+       println("$playerTwo 's turn")
+       userInput(coins)
+       displayGame(coins)
+//      if {
+//          //check for win
+//      }
+
 
    }
 
@@ -73,13 +87,8 @@ fun setUpGame() {
             "and 'Gld coin' is the gold coin.")
     println()
 
-//    Get player names
-    val playerOne = getString("Enter player ones username: ")
-    val playerTwo = getString("Enter player twos username: ")
 
-//    confirm player names
-    println("Player One: $playerOne")
-    println("Player Two: $playerTwo")
+
 
 
 }
@@ -126,15 +135,20 @@ fun getString(prompt: String): String {
     return userInput
 }
 
-fun getUserAction(): Char {
-    return REMOVE
+
+
+fun userInput(gameLength: MutableList<String>) {
+  val moveFrom = getInt("Enter the number above the coin you would like to move: ")
+    val moveTo = getInt("Enter the number above the coin you would like to move to: ")
+    swapCoins(gameLength, moveFrom, moveTo)
 }
 
-fun userInput() {
-  getInt("Enter the number above the coin you would like to move: ")
-  getInt("Enter the number above the coin you would like to move to: ")
+fun swapCoins(gameLength: MutableList<String>, slotNum1: Int, slotNum2: Int) {
 
+    val swap = gameLength[slotNum1 - 1]
 
+    gameLength[slotNum1 - 1] = gameLength[slotNum2 - 1]
+    gameLength[slotNum2 - 1] = swap
 }
 
 fun setupCoins(): MutableList<String> {
