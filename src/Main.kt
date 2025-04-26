@@ -57,26 +57,31 @@ fun main() {
 
     displayGame(coins)
 
-   while (true) {
-       println("$playerOne 's turn")
-       userInput(coins)
-       displayGame(coins)
+    while (true) {
+        println("$playerOne's turn")
+        if (userInput(coins)) {
+            println("$playerOne has removed the gold coin and won the game!")
+            break
+        }
+        displayGame(coins)
 
-       println("$playerTwo 's turn")
-       userInput(coins)
-       displayGame(coins)
-//      if {
-//          //check for win
-//      }
-
-
-   }
-
-
+        println("$playerTwo's turn")
+        if (userInput(coins)) {
+            println("$playerTwo has removed the gold coin and won the game!")
+            break
+        }
+        displayGame(coins)
+    }
 
 
 
 }
+
+
+
+
+
+
 
 fun setUpGame() {
     val gameBoard = mutableListOf<String>()
@@ -137,11 +142,33 @@ fun getString(prompt: String): String {
 
 
 
-fun userInput(gameLength: MutableList<String>) {
-  val moveFrom = getInt("Enter the number above the coin you would like to move: ")
-    val moveTo = getInt("Enter the number above the coin you would like to move to: ")
-    swapCoins(gameLength, moveFrom, moveTo)
+//fun userInput(gameLength: MutableList<String>) {
+//    val moveFrom = getInt("Enter the number above the coin you would like to move: ")
+//    val moveTo = getInt("Enter the number above the coin you would like to move to: ")
+//    swapCoins(gameLength, moveFrom, moveTo)
+
+fun userInput(gameBoard: MutableList<String>): Boolean {
+    val input = getString("Enter the number above the coin you would like to move, or 'X' to remove a coin from slot 1: ")
+
+    if (input.uppercase() == "X") {
+        if (gameBoard[0] == "GC") {
+            gameBoard[0] = EMPTY
+            return true // Player wins after removing gold coin
+        } else {
+            gameBoard[0] = EMPTY
+            println("Coin removed from slot 1.")
+            return false
+        }
+    } else {
+        val moveFrom = input.toInt()
+        val moveTo = getInt("Enter the number above the slot you want to move to: ")
+        swapCoins(gameBoard, moveFrom, moveTo)
+        return false
+    }
 }
+
+
+//}
 
 fun swapCoins(gameLength: MutableList<String>, slotNum1: Int, slotNum2: Int) {
 
