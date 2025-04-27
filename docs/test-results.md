@@ -4,7 +4,7 @@ The test results show the actual outcome of the testing, following the [Test Pla
 
 ---
 
-## Example Test Name
+## Player names 
 
 Do the player names get stored correctly for later use
 
@@ -14,26 +14,33 @@ Run the program and see if it'll display player names
 
 ### Test Result
 
-![playerNames.gif](screenshots/playerNames.gif)
+![playerName.gif](screenshots/playerName.gif)
 
 The program ran without any errors and collected and displayed player names correctly 
 
 ---
+![move+removeCoins.gif](screenshots/move%2BremoveCoins.gif)
+## Moving and removing coins
 
-## Example Test Name
-
-Display the coins on the board 
+Do the coins move and remove from the grid. 
 
 ### Test Data Used
 
-Run the program. The program will display the list in every individual box instead of put the list into the board 
-like you would expect. 
+Run the program and see if the game responds to my input 
 
 ### Test Result
-![listnotwork.gif](screenshots/listnotwork.gif)
-
-
-I need to fix this and will show the fix later. 
+Game works and does what its meant to. 
 
 ---
+![move+removeCoins.gif]![boundary.gif](screenshots/boundary.gif)
+## Boundary testing 
+
+Do the coins get randomly placed on the boundaries (slot 1 and slot 15)
+
+### Test Data Used
+
+Run the program and see if the coins place on the boundary slots 
+
+### Test Result
+Works well
 

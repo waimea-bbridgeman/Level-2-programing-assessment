@@ -15,7 +15,6 @@
 
 const val gameLength = 15 //the length of the game board
 const val EMPTY = "" //Is an empty slot on the board
-const val REMOVE = 'X' //Will remove a coin from the 1 slot on the board
 
 fun main() {
     println()
@@ -23,7 +22,7 @@ fun main() {
     println("-----------------------------------")
     println()
 
-    setupCoins()
+
 
     val coins = mutableListOf<String>()
     coins.add("GC")
@@ -77,28 +76,17 @@ fun main() {
 
 }
 
-
-
-
-
-
-
 fun setUpGame() {
     val gameBoard = mutableListOf<String>()
     gameBoard.add(EMPTY)
 
-    println("Game rules: Old gold is a game for two players that's played on a one-dimensional grid with coins, \n" +
-            "where the aim is to win by being the player who removes the gold coin. Note: 'Slvr coin' is a silver coin\n" +
-            "and 'Gld coin' is the gold coin.")
+    println("Game rules: Old gold is a game for two players that's played on a one-dimensional grid, \n" +
+            "where the aim is to win by being the player who removes the gold coin.\nYou cannot move a coin over or " +
+            "on top of another coin, neither can you move a coin to \nthe right, only move coins to the left." +
+            " Note: 'SC' is a silver coin and 'GC' is the gold coin. ")
     println()
 
-
-
-
-
 }
-
-
 
 fun displayGame(coins: MutableList<String>) {
 
@@ -140,13 +128,6 @@ fun getString(prompt: String): String {
     return userInput
 }
 
-
-
-//fun userInput(gameLength: MutableList<String>) {
-//    val moveFrom = getInt("Enter the number above the coin you would like to move: ")
-//    val moveTo = getInt("Enter the number above the coin you would like to move to: ")
-//    swapCoins(gameLength, moveFrom, moveTo)
-
 fun userInput(gameBoard: MutableList<String>): Boolean {
     val input = getString("Enter the number above the coin you would like to move, or 'X' to remove a coin from slot 1: ")
 
@@ -157,18 +138,15 @@ fun userInput(gameBoard: MutableList<String>): Boolean {
         } else {
             gameBoard[0] = EMPTY
             println("Coin removed from slot 1.")
-            return false
+            return false //Game continues as if nothing happened
         }
     } else {
         val moveFrom = input.toInt()
         val moveTo = getInt("Enter the number above the slot you want to move to: ")
         swapCoins(gameBoard, moveFrom, moveTo)
-        return false
+        return false //Lets player move coins
     }
 }
-
-
-//}
 
 fun swapCoins(gameLength: MutableList<String>, slotNum1: Int, slotNum2: Int) {
 
@@ -178,11 +156,6 @@ fun swapCoins(gameLength: MutableList<String>, slotNum1: Int, slotNum2: Int) {
     gameLength[slotNum2 - 1] = swap
 }
 
-fun setupCoins(): MutableList<String> {
-    val boardLength = mutableListOf<String>()
-    for (i in 1..gameLength) boardLength.add(EMPTY)
-    return boardLength
-}
 fun getInt(prompt: String): Int {
     var intValue: Int?
 
