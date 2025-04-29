@@ -24,18 +24,31 @@ The program should print out both player one and player twos username
 
 
 
-## Example Test Name
+## Can the boundaries be used 
 
-Example test description. Example test description. Example test description. Example test description. Example test description. Example test description.
+Do coins get randomly shuffled into the beginning and end slots (slot 1 and 15)
 
 ### Test Data To Use
 
-Details of test data and reasons for selection. Details of test data and reasons for selection. Details of test data and reasons for selection.
+if the coins cannot be placed on the boundaries then the coins cannot be moved into slot one and then be removed,
+making the game unplayable and unwinnable 
 
 ### Expected Test Result
 
-Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. 
+Coins get randomly shuffled into the end slots  
 
 ---
 
+## Can the user move and remove coins 
+
+When a player enter a coin to move does the code move it. When a player wants to remove a coin does the code remove. 
+
+
+### Test Data To Use
+
+Enter a move request and enter a remove request. 
+
+### Expected Test Result
+
+Coins move spaces and get removed when asked 
 

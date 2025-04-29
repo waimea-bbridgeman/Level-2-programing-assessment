@@ -9,14 +9,14 @@ This checklist can be used to gauge progress towards different levels of success
 ### Program Functionality
 
 The game functions correctly and meets the specification:
-- [ ] The game is **playable**
-- [ ] The **instructions** for the game are available in-game
-- [ ] **Two players** can play
+- [ x ] The game is **playable**
+- [ x ] The **instructions** for the game are available in-game
+- [ x ] **Two players** can play
 - [ x ] Player **names** are used to identify each player
-- [ ] Players **take turns** to play
-- [ ] Players provides **input data** to the game (e.g. moves to make)
-- [ ] The **current status** of the game is shown after each play
-- [ ] A **winner is detected** correctly
+- [ x ] Players **take turns** to play
+- [ x ] Players provides **input data** to the game (e.g. moves to make)
+- [ x ] The **current status** of the game is shown after each play
+- [ x ] A **winner is detected** correctly
 
 ### Program Code
 
@@ -41,14 +41,14 @@ The program code:
 ### Program Testing
 
 The program has been tested and there is documented evidence that:
-- [ ] The game is **fully functional**, showing testing of:
-  - [ ] game setup
-  - [ ] player moves
-  - [ ] players taking turns
+- [ x ] The game is **fully functional**, showing testing of:
+  - [ x ] game setup
+  - [ x ] player moves
+  - [ x ] players taking turns
   - [ ] scoring (if any)
-  - [ ] players winning
+  - [ x ] players winning
   - [ ] final feedback (if appropriate)
-- [ ] **Valid (expected) data** has been used to test **all data inputs**
+- [ x ] **Valid (expected) data** has been used to test **all data inputs**
 - [ x ] Where tests have failed, **fixes** are discussed and **tests re-run**
 
 ---
@@ -61,22 +61,22 @@ The program stores data using variables, where:
 - [ x ] Variable **names are well-chosen** (relating to their purpose)
 - [ x ] Variable names **begin with lowercase**
 - [ x ] Naming is consistent, either **camelCase or snake_case**
-- [ ] Variables are **scoped appropriately** (global or local to a function)
+- [ x ] Variables are **scoped appropriately** (global or local to a function)
 - [ x ] **Global** variables are only used if **genuinely needed**
 
 The program uses functions appropriately, where:
-- [ ] At least one uses **parameters** to pass data into it
+- [ x ] At least one uses **parameters** to pass data into it
 - [ x ] At least one provides a **return value** to the calling code
 - [ x ] The function **names are well-chosen**, relating to their functionality 
 
 ### Program Documentation
 
 The program code is well-commented:
-- [ ] **JavaDoc Block comments** are used at the top of each **file** and **function**
-- [ ] Comments accurately describe the **function and behaviour** of the code:
-  - [ ] Defining the **purpose** of functions / key blocks of code
-  - [ ] Explaining the **reason** (the '**why**') of key parts of the code
-  - [ ] Defining function **parameters** and/or **return values**
+- [ x ] **JavaDoc Block comments** are used at the top of each **file** and **function**
+- [ x ] Comments accurately describe the **function and behaviour** of the code:
+  - [ x ] Defining the **purpose** of functions / key blocks of code
+  - [ x ] Explaining the **reason** (the '**why**') of key parts of the code
+  - [ x ] Defining function **parameters** and/or **return values**
 
 ### Program Testing
 
