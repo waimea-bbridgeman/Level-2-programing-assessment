@@ -9,47 +9,47 @@ This checklist can be used to gauge progress towards different levels of success
 ### Program Functionality
 
 The game functions correctly and meets the specification:
-- [ x ] The game is **playable**
-- [ x ] The **instructions** for the game are available in-game
-- [ x ] **Two players** can play
-- [ x ] Player **names** are used to identify each player
-- [ x ] Players **take turns** to play
-- [ x ] Players provides **input data** to the game (e.g. moves to make)
-- [ x ] The **current status** of the game is shown after each play
-- [ x ] A **winner is detected** correctly
+- [x] The game is **playable**
+- [x] The **instructions** for the game are available in-game
+- [x] **Two players** can play
+- [x] Player **names** are used to identify each player
+- [x] Players **take turns** to play
+- [x] Players provides **input data** to the game (e.g. moves to make)
+- [x] The **current status** of the game is shown after each play
+- [x] A **winner is detected** correctly
 
 ### Program Code
 
 The program stores data using:
-- [ x ] **Variables** of at least two types (e.g. int, text, boolean)
-- [ x ] At least one **data collection** (array / list) to store some elements of the game data
+- [x] **Variables** of at least two types (e.g. int, text, boolean)
+- [x] At least one **data collection** (array / list) to store some elements of the game data
 
 The program structure:
-- [ x ] Is broken up into **functions**: a main function, plus other supporting functions 
-- [ ] Contains **sequences** of instructions
-- [ ] Uses **conditional** instructions to control the program flow
-- [ x ] Uses program **branches** (if...else, when, etc.)
-- [ x ] Uses **iteration** (loops) to repeat things (for, while, etc.)
+- [x] Is broken up into **functions**: a main function, plus other supporting functions 
+- [x] Contains **sequences** of instructions
+- [x] Uses **conditional** instructions to control the program flow
+- [x] Uses program **branches** (if...else, when, etc.)
+- [x] Uses **iteration** (loops) to repeat things (for, while, etc.)
 
 ### Program Documentation
 
 The program code:
-- [ x ] Is **indented** correctly
-- [ x ] Is **laid-out clearly**
-- [ x ] Contains **comments** that help in understanding how it works
+- [x] Is **indented** correctly
+- [x] Is **laid-out clearly**
+- [x] Contains **comments** that help in understanding how it works
 
 ### Program Testing
 
 The program has been tested and there is documented evidence that:
-- [ x ] The game is **fully functional**, showing testing of:
-  - [ x ] game setup
-  - [ x ] player moves
-  - [ x ] players taking turns
+- [x] The game is **fully functional**, showing testing of:
+  - [x] game setup
+  - [x] player moves
+  - [x] players taking turns
   - [ ] scoring (if any)
-  - [ x ] players winning
+  - [x] players winning
   - [ ] final feedback (if appropriate)
-- [ x ] **Valid (expected) data** has been used to test **all data inputs**
-- [ x ] Where tests have failed, **fixes** are discussed and **tests re-run**
+- [x] **Valid (expected) data** has been used to test **all data inputs**
+- [x] Where tests have failed, **fixes** are discussed and **tests re-run**
 
 ---
 
@@ -58,32 +58,32 @@ The program has been tested and there is documented evidence that:
 ### Program Code
 
 The program stores data using variables, where:
-- [ x ] Variable **names are well-chosen** (relating to their purpose)
-- [ x ] Variable names **begin with lowercase**
-- [ x ] Naming is consistent, either **camelCase or snake_case**
-- [ x ] Variables are **scoped appropriately** (global or local to a function)
-- [ x ] **Global** variables are only used if **genuinely needed**
+- [x] Variable **names are well-chosen** (relating to their purpose)
+- [x] Variable names **begin with lowercase**
+- [x] Naming is consistent, either **camelCase or snake_case**
+- [x] Variables are **scoped appropriately** (global or local to a function)
+- [x] **Global** variables are only used if **genuinely needed**
 
 The program uses functions appropriately, where:
-- [ x ] At least one uses **parameters** to pass data into it
-- [ x ] At least one provides a **return value** to the calling code
-- [ x ] The function **names are well-chosen**, relating to their functionality 
+- [x] At least one uses **parameters** to pass data into it
+- [x] At least one provides a **return value** to the calling code
+- [x] The function **names are well-chosen**, relating to their functionality 
 
 ### Program Documentation
 
 The program code is well-commented:
-- [ x ] **JavaDoc Block comments** are used at the top of each **file** and **function**
-- [ x ] Comments accurately describe the **function and behaviour** of the code:
-  - [ x ] Defining the **purpose** of functions / key blocks of code
-  - [ x ] Explaining the **reason** (the '**why**') of key parts of the code
-  - [ x ] Defining function **parameters** and/or **return values**
+- [x] **JavaDoc Block comments** are used at the top of each **file** and **function**
+- [x] Comments accurately describe the **function and behaviour** of the code:
+  - [x] Defining the **purpose** of functions / key blocks of code
+  - [x] Explaining the **reason** (the '**why**') of key parts of the code
+  - [x] Defining function **parameters** and/or **return values**
 
 ### Program Testing
 
 The program has been tested using:
-- [ ] A test plan **prepared in advance** of the coding
-- [ ] A test plan that **defines test data values** to be used
-- [ ] Test values that cover **boundary** (limit / edge) cases
+- [x] A test plan **prepared in advance** of the coding
+- [x] A test plan that **defines test data values** to be used
+- [x] Test values that cover **boundary** (limit / edge) cases
 
 ---
 

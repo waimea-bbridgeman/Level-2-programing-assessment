@@ -17,6 +17,8 @@ const val gameLength = 15 //the length of the game board
 const val EMPTY = "" //Is an empty slot on the board
 
 fun main() {
+    /** Controls all the setup and running of the game
+      */
     println()
     println("Welcome to the Old Gold Coin game!")
     println("-----------------------------------")
@@ -90,7 +92,7 @@ fun setUpGame() {
 }
 
 fun displayGame(coins: MutableList<String>) { //Prints and controls the length of the game board
-
+/**Creates the grid for the game to be played on*/
     val banner = ("+----".repeat(gameLength) + "+")
 
 

@@ -60,17 +60,6 @@ Game was won after the GC was removed
 ![winningGame.gif](screenshots/winningGame.gif)
 
 
-## Example 
 
-When the Gold Coin (GC) is removed is game won.
-
-### Test Data Used
-
-Remove the gold coin from the grid
-
-### Test Result
-Game was won after the GC was removed
-
-![example.png](screenshots%2Fexample.png)
 
 
